@@ -1,0 +1,133 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+
+}
+.battery { 
+  height: 150px; 
+  width: 300px; 
+  border: 5px solid #000; 
+  border-radius: 7px; 
+  position: absolute; 
+  overflow: hidden;
+  background-color:white;
+  /* animation: block 1s ease 0s infinite alternate-reverse; */
+
+  
+} 
+
+.top { 
+  height: 40px; 
+  width: 25px; 
+  background-color: #000; 
+  position: relative; 
+  left: 163px; 
+   
+   
+}
+.charge1, .charge2, .charge3, .charge4 {
+  width: 69px;
+  height: 150px;
+  display: inline-block;
+  
+  /* background-color:yellow; */
+  padding :0%;
+  overflow: hidden;
+  
+
+}
+.charge1{
+  /* background-color:red; */
+  opacity:0%;
+  animation: battery1 2s infinite;
+  
+}
+
+
+.charge2{
+
+  /* background-color:orange; */
+  opacity:0%;
+
+  animation: battery2 2s infinite;
+}
+
+
+.charge3{
+  /* background-color:yellow; */
+  opacity:0%;
+  animation: battery3 2s infinite;
+}
+
+
+.charge4{
+  /* background-color:greenyellow; */
+  opacity:0%;
+  animation: battery4 2s infinite;
+}
+@keyframes battery1 { 
+
+  25%, 
+  100% { 
+      opacity: 1; 
+      background-color: red;
+  } 
+} 
+
+@keyframes battery2 { 
+
+  0%, 
+  25% { 
+      opacity: 0; 
+      background-color: orange;
+  } 
+
+  50%, 
+  100% { 
+      opacity: 1; 
+      background-color: #a0f67b;
+  } 
+} 
+
+@keyframes battery3 { 
+
+  0%, 
+  50% { 
+      opacity: 0; 
+  } 
+
+  75%, 
+  100% { 
+      opacity: 1; 
+      background-color: #3BC700;
+  } 
+} 
+
+@keyframes battery4 { 
+
+  0%, 
+  75% { 
+      opacity: 0; 
+  } 
+
+  100% { 
+      opacity: 1; 
+      background-color: greenyellow;
+  } 
+} 
+
+
+
+
+
+
